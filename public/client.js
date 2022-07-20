@@ -8,8 +8,18 @@ do {
   name = prompt("Please enter your name:");
 } while (!name);
 
+document.getElementById("btn").addEventListener("click", sendMsg);
+
+function sendMsg(){
+  // console.log("clicked");
+  if(text.value != ""){
+    sendMessage(text.value);
+    text.value=null;
+  }
+}
+
 text.addEventListener("keyup", (e) => {
-  if (e.key === "Enter") {
+  if (e.key === "Enter" && text.value != "") {
     sendMessage(e.target.value);
     text.value=null;
   }

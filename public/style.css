@@ -1,5 +1,7 @@
 
  @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600&display=swap');
+
 
  * {
     padding: 0;
@@ -72,4 +74,24 @@ textarea {
     left: 0;
     color: #333;
     font-size: 14px;
+}
+
+#btn{
+    padding: 20px;
+    background: transparent;
+    border: 2px solid rgb(197, 197, 197);
+    color: rgb(156, 156, 156);
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: 10px;
+    cursor: pointer;
+    transition: .4s ease-in-out all;
+}
+
+#btn:hover {
+    background-color: rgb(197, 197, 197);
+    color: white;
 }
