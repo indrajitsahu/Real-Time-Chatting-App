@@ -7,7 +7,7 @@ app.get('/', (req, res)=>{
     res.sendFile(__dirname + '/index.html') 
     // res.send('Hello') 
 })  
-
+ 
 app.use(express.static(__dirname + '/public'))
  
 http.listen(PORT, ()=>{
